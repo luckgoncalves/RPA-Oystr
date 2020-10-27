@@ -8,16 +8,100 @@ body {
   color: #fff !important;
   background: #06777A !important;
   min-height: 100vh;
+  max-width: 1420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
 .App {
   display: grid;
 }
 
-.App > div {
+.App > section {
   min-height: 30vh;
 }
 
 ul, li {
   list-style-type: none;
+}
+
+.text-depoimento {
+  background: #065170;
+  color: #E5E5E5;
+}
+
+.desc-depoimento {
+  font-size: 28px;
+  line-height: 34px;
+
+  color: #E5E5E5;
+}
+
+.button-depoimento {
+  border: none;
+  border-radius: 59px;
+  background: #146181;
+
+  width: 232px;
+  height: 68px;
+  font-size: 16px;
+  
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.bt-contato {
+  width: 232px;
+  height: 68px;
+
+  border: none;
+  background: #FF4A6B;
+  border-radius: 59px;
+
+  font-size: 16px;
+  
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.card-problemas {
+  margin: 1.5rem;
+  text-align: left;
+}
+
+.card-problemas h3 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.card-problemas p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 19px;
+
+  color: #E5E5E5;
+}
+
+.button-agenda {
+  border: none;
+  width: 348px;
+  height: 68px;
+
+  background: #FF4A6B;
+  border-radius: 59px;
+  color: #FFFFFF;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
 }
