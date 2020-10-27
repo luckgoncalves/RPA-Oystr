@@ -6,12 +6,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
+  NavLink
 } from 'reactstrap';
 import logoOystr from '../../assets/img/logo-branca.svg'
 import { Container } from './styles';
@@ -22,11 +17,11 @@ function Header() {
   const toggle = () => setIsOpen(!isOpen);
   return (
     <Container>
-       <Navbar light expand="md">
+       <Navbar className="mr-5" expand="md">
         <NavbarBrand href="/"><img src={logoOystr} alt="Oystr." /></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
+          <Nav className="ml-auto" navbar>
             <NavItem>
               <NavLink href="/components/">O que fazemos</NavLink>
             </NavItem>

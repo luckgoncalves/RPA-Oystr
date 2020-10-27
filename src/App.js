@@ -1,34 +1,71 @@
 import Header from './components/Header'
 import Footer from './components/Footer'
-import { Card, CardBody, Button, CardTitle, CardText, CardImg } from 'reactstrap';
 import bots from './assets/img/Frame.svg'
 import kelri from './assets/img/kelri.svg'
 import fotoEquipe from './assets/img/foto-equipe.svg'
 import fotoOystr from './assets/img/foto-oystr.svg'
+import money from './assets/img/money.svg'
+import implementer from './assets/img/implementer.svg'
+import win from './assets/img/win.svg'
+import monitoring from './assets/img/monitoring.svg'
+import marketing from './assets/img/marketing.svg'
+import robot from './assets/img/robot.svg'
+import time from './assets/img/time.svg'
 import './App.css';
 
 function App() {
   const cards = [
-    {icon: '', title: 'Baixo investimento', text: 'Modelo simples de cobrança, sem multas de contrato e de rápido retorno.'},
-    {icon: '', title: 'Sem trauma de implantação', text: 'Robôs rodando na sua empresa em até 6 semanas.'},
-    {icon: '', title: 'Melhore a experiência dos seus colaboradores', text: 'Analistas devem analisar. Coordenadores devem coordenar e gerentes devem gerenciar. Tarefas repetitivas ficam com nossos robôs.'},
-    {icon: '', title: 'Controle seus robôs', text: 'Gerencie seus robôs em nossa plataforma.'},
+    {icon: money, title: 'Baixo investimento', text: 'Modelo simples de cobrança, sem multas de contrato e de rápido retorno.'},
+    {icon: implementer, title: 'Sem trauma de implantação', text: 'Robôs rodando na sua empresa em até 6 semanas.'},
+    {icon: win, title: 'Melhore a experiência dos seus colaboradores', text: 'Analistas devem analisar. Coordenadores devem coordenar e gerentes devem gerenciar. Tarefas repetitivas ficam com nossos robôs.'},
+    {icon: monitoring, title: 'Controle seus robôs', text: 'Gerencie seus robôs em nossa plataforma.'},
   ]
   return (
     <div className="App">
       <Header />
-      <section className="d-flex justify-content-between align-items-center">
-        <div>
-          <h2>Robos inteligentes para multiplicar a produtividade da sua empresa</h2>
-          <p>Integre seus sistemas, acabe com o retrabalho e escale seu negócio!</p>
-          <button className="button-agenda">Agendar demonstração</button>
+      <section className="d-flex flex-column">
+        <div className="d-flex">
+          <div className="p-5 text-left">
+            <h2>Robos inteligentes para multiplicar a produtividade da sua empresa</h2>
+            <p>Integre seus sistemas, acabe com o retrabalho e escale seu negócio!</p>
+            <button className="button-agenda">Agendar demonstração</button>
+          </div>
+          <div style={{position: 'relative'}}>
+            {/* <div className="elipse"></div> */}
+            <img src={fotoOystr} alt="Equipe"/>
+          </div>
         </div>
-        <div>
-          <img src={fotoOystr} alt="Equipe"/>
-        </div>
-
+          <div className="d-flex justify-content-around statistic mx-5 p-5 bg-white">
+            <div className="d-flex align-items-center statistic-card">
+              <div className="statistic-icon">
+                <img src={marketing} alt="Oystr"/>
+              </div>
+              <div className="text-left statistic-text">
+                <h5>Empresas auxiliadas</h5>
+                <p>mais de 150</p>
+              </div>
+            </div>
+            <div className="d-flex align-items-center statistic-card">
+              <div className="statistic-icon">
+                <img src={robot} alt="Oystr"/>
+              </div>
+              <div className="text-left statistic-text">
+                <h5>Robôs criados</h5>
+                <p>mais de 400</p>
+              </div>
+            </div>
+            <div className="d-flex align-items-center statistic-card">
+              <div className="statistic-icon">
+                <img src={time} alt="Oystr"/>
+              </div>
+              <div className="text-left statistic-text">
+                <h5>Horas economizadas</h5>
+                <p>84 mil horas</p>
+              </div>
+            </div>
+          </div>
       </section>
-      <section className="my-5">
+      <section className="my-5" >
         <h2>Quais problemas nossos robôs resolvem</h2>
         <div className="d-flex m-5">
 
@@ -61,17 +98,19 @@ function App() {
           </div>
         </div>
       </section>
-      <section>
+      <section className="py-5" style={{background: '#0D8D91'}}>
         <h2>Soluções sob medida para suas necessidades de negócios</h2>
+        <div className="d-flex justify-content-end my-5">
         {cards.map( card => 
-          <div className="card">
-            <img src="/assets/318x180.svg" alt="Card" />
-            <div className="card-body">
-              <div className="card-title" style={{color: '#000'}}>{card.title}</div>
-              <div className="card-text" style={{color: '#000'}}>{card.text}</div>
+          <div className="card mx-3">
+            <div className="card-body ">
+              <img src={card.icon} className="mt-3" alt="Card" />
+              <div className="card-title text-left my-3" style={{color: '#000'}}>{card.title}</div>
+              <div className="card-text text-left" style={{color: '#000'}}>{card.text}</div>
             </div>
           </div>
         )}
+        </div>
       </section>
       <section className="d-flex">
         <div className="p-0 img-depoimento">
@@ -89,7 +128,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="p-5">
+      <section className="p-5" style={{background: '#0D8D91'}}>
         <h2>Perguntas Frequentes</h2>
         <p>Confira as maiores dúvidas para entregar robôs nas operações.</p>
       </section>

@@ -8,7 +8,7 @@ body {
   color: #fff !important;
   background: #06777A !important;
   min-height: 100vh;
-  max-width: 1420px;
+  /* max-width: 1420px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,4 +104,59 @@ ul, li {
   line-height: 19px;
   text-align: center;
 
+}
+
+.card {
+  height: 339px;
+  width: 313px;
+}
+
+.card .card-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #252525;
+}
+
+.card .card-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #252525;
+}
+
+.elipse {
+  width: 469px;
+  height: 469px;
+  top: 0;
+  right: -10%;
+
+  position: absolute;
+  border-radius: 50%;
+  background: #F0F1EC;
+
+  z-index: -1;
+}
+
+.statistic .statistic-icon {
+  margin-right: 1.5rem;
+}
+
+.statistic .statistic-text h5{
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+
+  margin-bottom: 0;
+  color: #838383;
+}
+.statistic .statistic-text p{
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  
+  margin-bottom: 0;
+  color: #000000;
 }
