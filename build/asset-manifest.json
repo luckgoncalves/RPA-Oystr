@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9bb2dfef.chunk.css",
+    "main.js": "/static/js/main.c1407506.chunk.js",
+    "main.js.map": "/static/js/main.c1407506.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6ca7b5ba.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6ca7b5ba.js.map",
+    "static/css/2.109aacae.chunk.css": "/static/css/2.109aacae.chunk.css",
+    "static/js/2.9f6c6a30.chunk.js": "/static/js/2.9f6c6a30.chunk.js",
+    "static/js/2.9f6c6a30.chunk.js.map": "/static/js/2.9f6c6a30.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.109aacae.chunk.css.map": "/static/css/2.109aacae.chunk.css.map",
+    "static/css/main.9bb2dfef.chunk.css.map": "/static/css/main.9bb2dfef.chunk.css.map",
+    "static/js/2.9f6c6a30.chunk.js.LICENSE.txt": "/static/js/2.9f6c6a30.chunk.js.LICENSE.txt",
+    "static/media/facebook.b6e18726.svg": "/static/media/facebook.b6e18726.svg",
+    "static/media/instagram.e4cdf96e.svg": "/static/media/instagram.e4cdf96e.svg",
+    "static/media/linkedin.5548fed8.svg": "/static/media/linkedin.5548fed8.svg",
+    "static/media/logo-branca.22161a2e.svg": "/static/media/logo-branca.22161a2e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6ca7b5ba.js",
+    "static/css/2.109aacae.chunk.css",
+    "static/js/2.9f6c6a30.chunk.js",
+    "static/css/main.9bb2dfef.chunk.css",
+    "static/js/main.c1407506.chunk.js"
+  ]
+}
