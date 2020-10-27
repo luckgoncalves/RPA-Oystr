@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import Header from './components/Header'
+import Footer from './components/Footer'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div>
+        <h2>Robos inteligentes para multiplicar a produtividade da sua empresa</h2>
+      </div>
+      <div>
+        <h2>Quais problemas nossos robôs resolvem</h2>
+      </div>
+      <div>
+        <h2>SoluçÕes sob medida para suas necessidades de negócios</h2>
+      </div>
+      <div>
+        <h2>Depoimentos</h2>
+      </div>
+      <div>
+        <h2>Perguntas Frequentes</h2>
+      </div>
+      <div>
+        <h2>Vamos fazer seu negócio</h2>
+      </div>
+      <Footer />
     </div>
   );
 }
