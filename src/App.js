@@ -69,11 +69,11 @@ function App() {
       </section>
      <section className="my-5" >
         <h2>Quais problemas nossos robôs resolvem</h2>
-        <div className="d-flex m-5">
-
-          <div>
-            <img src={bots}  alt="Bots"/>
+        <div className="d-flex row m-5 justify-content-center">
+          <div className="col-xs-12 col-lg-5">
+            <img src={bots} className="w-100"  alt="Bots"/>
           </div>
+          <div className="col-xs-12 col-xl-7">
           <div className="row">
             <div className="col-6">
               <div className="card-problemas">
@@ -96,7 +96,7 @@ function App() {
                 <p>Tenho o controle e aumente exponencialmente a escala e capacidade de entrega da sua operação, sem perder qualidade.</p>
               </div>
             </div>
-            
+            </div>
           </div>
         </div>
       </section>
