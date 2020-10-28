@@ -11,6 +11,7 @@ import monitoring from './assets/img/monitoring.svg'
 import marketing from './assets/img/marketing.svg'
 import robot from './assets/img/robot.svg'
 import time from './assets/img/time.svg'
+import ellipse from './assets/img/ellipse.svg'
 import './App.css';
 
 function App() {
@@ -23,15 +24,15 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <section className="d-flex flex-column">
-        <div className="d-flex">
+       <section className="d-flex flex-column">
+        <div className="d-flex justify-content-between">
           <div className="p-5 text-left">
-            <h2>Robos inteligentes para multiplicar a produtividade da sua empresa</h2>
+            <h2>Robôs inteligentes para multiplicar a produtividade da sua empresa</h2>
             <p>Integre seus sistemas, acabe com o retrabalho e escale seu negócio!</p>
             <button className="button-agenda">Agendar demonstração</button>
           </div>
           <div style={{position: 'relative'}}>
-            {/* <div className="elipse"></div> */}
+            <img className="ellipse" src={ellipse} alt="Ellipse" />
             <img src={fotoOystr} alt="Equipe"/>
           </div>
         </div>
@@ -65,7 +66,7 @@ function App() {
             </div>
           </div>
       </section>
-      <section className="my-5" >
+     <section className="my-5" >
         <h2>Quais problemas nossos robôs resolvem</h2>
         <div className="d-flex m-5">
 
@@ -98,7 +99,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="py-5" style={{background: '#0D8D91'}}>
+    {/*   <section className="py-5" style={{background: '#0D8D91'}}>
         <h2>Soluções sob medida para suas necessidades de negócios</h2>
         <div className="d-flex justify-content-end my-5">
         {cards.map( card => 
@@ -141,7 +142,7 @@ function App() {
         <div>
           <img src={fotoEquipe} alt="Equipe Oystr."/>
         </div>
-      </section>
+      </section> */}
       <Footer />
     </div>
   );
