@@ -14,16 +14,6 @@ html, body, #root {
 body {
   color: #fff !important;
   background: #06777A !important;
-  
-  /* max-width: 1420px; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-}
-
-.App {
-  display: grid;
 }
 
 .App > section {
@@ -148,6 +138,8 @@ ul, li {
   line-height: 24px;
 
   color: #252525;
+
+  height: 5rem;
 }
 
 .card .card-text {

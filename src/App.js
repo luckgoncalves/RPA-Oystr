@@ -105,18 +105,18 @@ function App() {
           <h2>Soluções sob medida para suas necessidades de negócios</h2>
         </div>
         <div className="conteiner-card d-flex my-5">
-        {cards.map( card => 
-          <div className="card mx-3">
-            <div className="card-body ">
-              <img src={card.icon} className="mt-3" alt="Card" />
-              <div className="card-title text-left my-3" style={{color: '#000'}}>{card.title}</div>
-              <div className="card-text text-left" style={{color: '#000'}}>{card.text}</div>
+          {cards.map( card => 
+            <div className="card mx-3">
+              <div className="card-body px-5">
+                <img src={card.icon} className="mt-3 d-block" alt="Card" />
+                <div className="card-title text-left my-3" style={{color: '#000'}}>{card.title}</div>
+                <div className="card-text text-left" style={{color: '#000'}}>{card.text}</div>
+              </div>
             </div>
-          </div>
-        )}
+          )}
         </div>
       </section>
-    {/*   <section className="d-flex">
+      <section className="d-flex">
         <div className="p-0 img-depoimento">
           <img src={kelri} alt="Kelri" />
         </div>
@@ -145,7 +145,7 @@ function App() {
         <div>
           <img src={fotoEquipe} alt="Equipe Oystr."/>
         </div>
-      </section> */}
+      </section>
       </main>
       <Footer />
     </div>
