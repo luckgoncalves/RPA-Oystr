@@ -12,8 +12,26 @@ export const Container = styled.div`
     text-align: left;
     margin: 1.5rem;
 
+    h4 {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+
+      color: #FFFFFF;
+    }
+
     ul {
       padding: 0;
+      margin: 0;
+
+      li {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #E5E5E5;
+        padding: 0.3rem 0;
+      }
     }
 
     .redes-sociais {

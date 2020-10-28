@@ -6,7 +6,7 @@ import { Container } from './styles'
 
 function Footer() {
   return (
-    <Container>
+    <Container className="p-5">
       <div>
         <h4>Produto</h4>
         <ul>

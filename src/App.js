@@ -132,15 +132,36 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="p-5" style={{background: '#0D8D91'}}>
-        <h2>Perguntas Frequentes</h2>
-        <p>Confira as maiores dúvidas para entregar robôs nas operações.</p>
+      <section className="d-flex flex-column justify-content-center align-items-center p-5" style={{background: '#0D8D91'}}>
+        <div>
+          <h2>Perguntas Frequentes</h2>
+          <p>Confira as maiores dúvidas para entregar robôs nas operações.</p>
+        </div>
+        <div className="d-flex align-items-center my-5">
+          <div>
+            <ul className="list-perguntas text-left">
+              <li>Como funciona?</li>
+              <li>Quanto tempo para criar um robô?</li>
+              <li>Quais carteiras trabalhamos?</li>
+              <li>Como são as integrações?</li>
+            </ul>
+          </div>
+          <div className="card card-perguntas mx-3">
+            <div className="card-body ">
+              <div className="card-text  text-left" style={{color: '#000'}}>
+                Solicite a lista de robôs que temos para suas carteiras. São mais de 400 robôs! Se não encontrar o que precisa, nossa equipe técnica levanta as suas necessidades e desenha o projeto sem custo!
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section className="d-flex justify-content-between align-items-center justify-content-center">
-        <div className="p-5 w-50 text-left">
-          <h2>Vamos fazer seu negócio crescer, juntos</h2>
-          <p>Ligue para nós em <b>+55(41) 9 9235-0918</b></p>
-          <button className="bt-contato">Fale conosco</button>
+        <div className="p-5 w-50 text-left d-flex justify-content-center align-items-center">
+          <div>
+            <h2>Vamos fazer seu negócio<br/> crescer, juntos</h2>
+            <p>Ligue para nós em <b>+55(41) 9 9235-0918</b></p>
+            <button className="bt-contato">Fale conosco</button>
+          </div>
         </div>
         <div>
           <img src={fotoEquipe} alt="Equipe Oystr."/>
