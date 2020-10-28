@@ -113,9 +113,33 @@ ul, li {
 
 }
 
+.conteiner-card {
+  width: 85%;
+
+  overflow-x: scroll;
+  justify-content: start;
+  padding-bottom: 1rem;
+}
+
+.conteiner-card::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #167A7C;
+}
+.conteiner-card::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #167A7C;
+}
+.conteiner-card::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #40ACAE;
+}
+
 .card {
   height: 339px;
   width: 313px;
+  min-width: 313px !important;
 }
 
 .card .card-title {

@@ -24,6 +24,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <main>
        <section className="d-flex flex-column">
         <div className="d-flex justify-content-between">
           <div className="p-5 text-left">
@@ -99,9 +100,11 @@ function App() {
           </div>
         </div>
       </section>
-    {/*   <section className="py-5" style={{background: '#0D8D91'}}>
-        <h2>Soluções sob medida para suas necessidades de negócios</h2>
-        <div className="d-flex justify-content-end my-5">
+      <section className="py-5 d-flex flex-column justify-content-start align-items-end" style={{background: '#0D8D91'}}>
+        <div className="w-100">
+          <h2>Soluções sob medida para suas necessidades de negócios</h2>
+        </div>
+        <div className="conteiner-card d-flex my-5">
         {cards.map( card => 
           <div className="card mx-3">
             <div className="card-body ">
@@ -113,7 +116,7 @@ function App() {
         )}
         </div>
       </section>
-      <section className="d-flex">
+    {/*   <section className="d-flex">
         <div className="p-0 img-depoimento">
           <img src={kelri} alt="Kelri" />
         </div>
@@ -143,6 +146,7 @@ function App() {
           <img src={fotoEquipe} alt="Equipe Oystr."/>
         </div>
       </section> */}
+      </main>
       <Footer />
     </div>
   );
