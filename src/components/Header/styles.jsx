@@ -5,7 +5,17 @@ export const Container = styled.div`
 
   .nav-item {
     .nav-link {
-      color: #FFFFFF !important;
+      color: #E5E5E5;
+      transition: all .2s ease-in-out;
+
+      &.nav-link:hover {
+        color: #FFF !important;
+        transform: scale(1.05);
+      }
+
+      &.active {
+        color: #FFF !important;
+      }
       
       font-size: 24px;
       line-height: 29px;

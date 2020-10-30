@@ -12,6 +12,7 @@ import marketing from './assets/img/marketing.svg'
 import robot from './assets/img/robot.svg'
 import time from './assets/img/time.svg'
 import ellipse from './assets/img/ellipse.svg'
+import play from './assets/img/play.svg'
 import './App.css';
 
 function App() {
@@ -25,12 +26,12 @@ function App() {
     <div className="App">
       <Header />
       <main>
-       <section className="d-flex flex-column">
+       <section id="whatWheDo" className="d-flex flex-column">
         <div className="d-flex justify-content-between">
-          <div className="p-5 text-left">
-            <h2>Robôs inteligentes para multiplicar a produtividade da sua empresa</h2>
-            <p>Integre seus sistemas, acabe com o retrabalho e escale seu negócio!</p>
-            <button className="button-agenda">Agendar demonstração</button>
+          <div className="p-5 text-left" style={{width: '40%'}}>
+            <h2 className="fw-bold mb-3">Robôs inteligentes para multiplicar a produtividade da sua empresa</h2>
+            <p className="fw-400 mb-3" style={{color: '#E5E5E5'}}>Integre seus sistemas, acabe com o <br/>retrabalho e escale seu negócio!</p>
+            <button className="button-agenda fw-700">Agendar demonstração</button>
           </div>
           <div style={{position: 'relative'}}>
             <img className="ellipse" src={ellipse} alt="Ellipse" />
@@ -67,8 +68,8 @@ function App() {
             </div>
           </div>
       </section>
-     <section className="my-5" >
-        <h2>Quais problemas nossos robôs resolvem</h2>
+     <section id="aboutRobots" className="my-5" >
+        <h2 className="fw-700" style={{color: '#E5E5E5'}}>Quais problemas<br /> nossos robôs resolvem</h2>
         <div className="d-flex row m-5 justify-content-center">
           <div className="col-xs-12 col-lg-5">
             <img src={bots} className="w-100"  alt="Bots"/>
@@ -100,15 +101,18 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="py-5 d-flex flex-column justify-content-start align-items-end" style={{background: '#0D8D91'}}>
+      <section id="benefits" className="py-5 d-flex flex-column justify-content-start align-items-end" style={{background: '#0D8D91'}}>
         <div className="w-100">
-          <h2>Soluções sob medida para suas necessidades de negócios</h2>
+          <h2 className="fw-700" style={{color: '#E5E5E5'}}>Soluções sob medida<br /> para suas necessidades de negócios</h2>
         </div>
         <div className="conteiner-card d-flex my-5">
           {cards.map( card => 
             <div className="card mx-3">
               <div className="card-body px-5">
-                <img src={card.icon} className="mt-3 d-block" alt="Card" />
+                <div>
+                  <div className="elipse-img-card"></div>
+                  <img src={card.icon} className="card-ico mt-3 d-block" alt="Card" />
+                </div>
                 <div className="card-title text-left my-3" style={{color: '#000'}}>{card.title}</div>
                 <div className="card-text text-left" style={{color: '#000'}}>{card.text}</div>
               </div>
@@ -126,8 +130,11 @@ function App() {
             Vamos em frente na parceria com a Oystr na busca de novas ferramentas e mais evolução sempre."</p>
           </div>
           <div style={{width: '70%'}} className="d-flex align-items-center justify-content-between">
-            <div className="autor-depoimento mx-3">Kelri Molina </div>
-            <div className="escritorio-depoimento mx-3">Mascarenhas Barbosa</div>
+            <div className="d-flex justify-content-between">
+              <div className="autor-depoimento mx-3"><span>Kelri Molina</span> </div>
+              <div className="mx-5" style={{height: '31px', border: '1px solid #396AB7'}}></div>
+              <div className="escritorio-depoimento mx-3"><span>Mascarenhas Barbosa</span></div>
+            </div>
             <button className="button-depoimento mx-3"> Mais depoimentos </button>
           </div>
         </div>
@@ -138,15 +145,22 @@ function App() {
           <p>Confira as maiores dúvidas para entregar robôs nas operações.</p>
         </div>
         <div className="d-flex align-items-center my-5">
-          <div>
+          <div style={{zIndex:11, width: '25rem'}}>
             <ul className="list-perguntas text-left">
-              <li>Como funciona?</li>
-              <li>Quanto tempo para criar um robô?</li>
-              <li>Quais carteiras trabalhamos?</li>
-              <li>Como são as integrações?</li>
+              <li className="d-flex justify-content-between active">Como funciona? 
+              <div style={{width: '26px', height: '26px', borderRadius: '50%', background: '#FF4A6B'}} className="tag-play align-items-center justify-content-center"><img src={play}  alt="Play"/></div></li>
+              <li className="d-flex justify-content-between">Quais carteiras trabalhamos?
+                <div style={{width: '26px', height: '26px', borderRadius: '50%', background: '#FF4A6B'}} className="tag-play align-items-center justify-content-center"><img src={play}  alt="Play"/></div>
+              </li>
+              <li className="d-flex justify-content-between">Quais carteiras trabalhamos?
+                <div style={{width: '26px', height: '26px', borderRadius: '50%', background: '#FF4A6B'}} className="tag-play align-items-center justify-content-center"><img src={play}  alt="Play"/></div>
+              </li>
+              <li className="d-flex justify-content-between">Como são as integrações?
+                <div style={{width: '26px', height: '26px', borderRadius: '50%', background: '#FF4A6B'}} className="tag-play align-items-center justify-content-center"><img src={play}  alt="Play"/></div>
+              </li>
             </ul>
           </div>
-          <div className="card card-perguntas mx-3">
+          <div className="card card-perguntas mx-3" style={{zIndex:10}}>
             <div className="card-body ">
               <div className="card-text  text-left" style={{color: '#000'}}>
                 Solicite a lista de robôs que temos para suas carteiras. São mais de 400 robôs! Se não encontrar o que precisa, nossa equipe técnica levanta as suas necessidades e desenha o projeto sem custo!
@@ -155,12 +169,12 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="d-flex justify-content-between align-items-center justify-content-center">
+      <section id="contact" className="d-flex justify-content-between align-items-center justify-content-center">
         <div className="p-5 w-50 text-left d-flex justify-content-center align-items-center">
           <div>
             <h2>Vamos fazer seu negócio<br/> crescer, juntos</h2>
             <p>Ligue para nós em <b>+55(41) 9 9235-0918</b></p>
-            <button className="bt-contato">Fale conosco</button>
+            <button className="button-contato">Fale conosco</button>
           </div>
         </div>
         <div>

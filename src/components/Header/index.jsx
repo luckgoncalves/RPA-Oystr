@@ -22,17 +22,17 @@ function Header() {
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
-            <NavItem>
-              <NavLink href="/components/">O que fazemos</NavLink>
+            <NavItem className="mx-xl-4 mx-lg-3">
+              <NavLink className="active" href="#whatWheDo">O que fazemos</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink href="/components/">Sobre nosso robôs</NavLink>
+            <NavItem className="mx-xl-4 mx-lg-3">
+              <NavLink href="#aboutRobots">Sobre nosso robôs</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink href="/components/">Beneficios</NavLink>
+            <NavItem className="mx-xl-4 mx-lg-3">
+              <NavLink href="#benefits">Beneficios</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">Contato</NavLink>
+            <NavItem className="mx-xl-4 mx-lg-3">
+              <NavLink href="#contact">Contato</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

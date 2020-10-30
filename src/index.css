@@ -1,7 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  font-family: 'Lato', sans-serif;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-900 {
+  font-weight: 900;
 }
 
 html, body, #root {
@@ -48,9 +67,15 @@ ul, li {
   line-height: 19px;
   text-align: center;
   color: #FFFFFF;
+
+  transition: all .2s ease-in-out;
 }
 
-.bt-contato {
+.button-depoimento:hover {
+  transform: scale(1.05)
+}
+
+.button-contato {
   width: 232px;
   height: 68px;
 
@@ -63,6 +88,12 @@ ul, li {
   line-height: 19px;
   text-align: center;
   color: #FFFFFF;
+  
+  transition: all .2s ease-in-out;
+}
+
+.button-contato:hover {
+  transform: scale(1.05);
 }
 
 .card-problemas {
@@ -73,7 +104,7 @@ ul, li {
 .card-problemas h3 {
   font-size: 20px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 700;
 
   color: #fff;
   margin-bottom: 1rem;
@@ -81,7 +112,7 @@ ul, li {
 
 .card-problemas p {
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 19px;
 
   color: #E5E5E5;
@@ -101,12 +132,17 @@ ul, li {
   line-height: 19px;
   text-align: center;
 
+  transition: all .2s ease-in-out;
+}
+
+.button-agenda:hover {
+  transform: scale(1.05);
 }
 
 .conteiner-card {
   width: 85%;
 
-  overflow-x: scroll;
+  overflow-x: auto;
   justify-content: start;
   padding-bottom: 1rem;
 }
@@ -126,28 +162,62 @@ ul, li {
   background-color: #40ACAE;
 }
 
-.card {
+.conteiner-card .card-body .elipse-img-card {
+  width: 67px;
+  height: 67px;
+  position: absolute;
+  
+  background: #E2F9FA;
+  border-radius: 50%;
+  z-index: 10;
+
+  margin-left: 0.3rem;
+}
+.conteiner-card .card-body .card-ico {
+  position: relative;
+  z-index: 12;
+}
+
+.conteiner-card .card {
   height: 339px;
   width: 313px;
   min-width: 313px !important;
+
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 .card .card-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 
-  color: #252525;
+  color: #252525 !important;
 
-  height: 5rem;
+  height: 4rem;
 }
 
 .card .card-text {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
 
-  color: #252525;
+  color: #252525 !important;
+}
+
+.autor-depoimento span {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+
+  line-height: 24px;
+}
+
+.escritorio-depoimento span {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+
+  line-height: 24px;
 }
 
 .card-perguntas{
@@ -190,7 +260,7 @@ ul, li {
 }
 
 .statistic .statistic-text h5{
-  font-weight: normal;
+  font-weight: 400;
   font-size: 20px;
   line-height: 24px;
 
@@ -209,6 +279,7 @@ ul, li {
 .list-perguntas li {
   background: #06777A;
   border-radius: 4px;
+  width: auto;
 
   border: 1px solid #06777A;
   padding: 1rem 3.5rem;
@@ -218,5 +289,35 @@ ul, li {
   font-size: 20px;
   line-height: 24px;
 
+  cursor: pointer;
   color: #E5E5E5;
+  transition: all .2s ease-in-out;
+  padding-right: 0rem;
+}
+
+.list-perguntas li .tag-play {
+  opacity: 0;
+  
+  transition: all 0s ease-in-out;
+}
+
+.list-perguntas .active {
+  margin-right: -55px;
+  padding-right: 1rem;
+}
+
+.list-perguntas .active .tag-play { 
+  display: flex;
+  opacity: 1;
+}
+
+.list-perguntas li:hover .tag-play { 
+  display: flex;
+  opacity: 1;
+}
+
+
+.list-perguntas li:hover {
+  margin-right: -55px;
+  padding-right: 1rem;
 }
