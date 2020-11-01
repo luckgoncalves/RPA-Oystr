@@ -314,6 +314,20 @@ ul, li {
   opacity: 1;
 }
 
+
+
+@media (width <= 400px) {
+  button {
+    max-width: 100%;
+  }
+  .list-questions {
+    width: 100% !important;
+  }
+  .conteiner-card{ 
+    width: 100% !important;
+  }
+}
+
 @media (width <= 990px) {
   #whatWheDo div{
     max-width: 100%;

@@ -148,7 +148,7 @@ function App() {
           <p>Confira as maiores dúvidas para entregar robôs nas operações.</p>
         </div>
         <div className="d-flex align-items-center my-5">
-          <div style={{zIndex:11, width: '25rem'}}>
+          <div className="list-questions" style={{zIndex:11, width: '25rem'}}>
             <ul className="list-perguntas text-left">
               <li className="d-flex justify-content-between active">Como funciona? 
               <div style={{width: '26px', height: '26px', borderRadius: '50%', background: '#FF4A6B'}} className="tag-play align-items-center justify-content-center"><img src={play}  alt="Play"/></div></li>
