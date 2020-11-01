@@ -17,7 +17,7 @@ function Header() {
   const toggle = () => setIsOpen(!isOpen);
   return (
     <Container>
-       <Navbar className="mr-5" expand="md">
+       <Navbar className="mr-5" dark expand="lg">
         <NavbarBrand href="/"><img src={logoOystr} alt="Oystr." /></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>

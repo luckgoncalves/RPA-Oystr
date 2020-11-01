@@ -49,6 +49,7 @@ ul, li {
 }
 
 .desc-depoimento {
+  width: 70%;
   font-size: 28px;
   line-height: 34px;
 
@@ -301,10 +302,7 @@ ul, li {
   transition: all 0s ease-in-out;
 }
 
-.list-perguntas .active {
-  margin-right: -55px;
-  padding-right: 1rem;
-}
+
 
 .list-perguntas .active .tag-play { 
   display: flex;
@@ -316,8 +314,31 @@ ul, li {
   opacity: 1;
 }
 
+@media (width <= 990px) {
+  #whatWheDo div{
+    max-width: 100%;
+  }
 
-.list-perguntas li:hover {
-  margin-right: -55px;
-  padding-right: 1rem;
+  .desc-depoimento { 
+    width: 100%;
+    text-align: left;
+  }
+ .img-depoimento img {
+  width: 100%;
+ }
+
+}
+
+@media (width >= 1100px) {
+  
+  
+  .list-perguntas .active {
+    margin-right: -55px;
+    padding-right: 1rem;
+  }
+  
+  .list-perguntas li:hover {
+    margin-right: -55px;
+    padding-right: 1rem;
+  }
 }
