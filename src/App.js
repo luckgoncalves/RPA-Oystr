@@ -40,7 +40,7 @@ function App() {
             </div>
           </div>
         </div>
-          <div className="d-flex flex-column flex-lg-row justify-content-around statistic mx-5 p-5 bg-white">
+          <div className="d-flex flex-column flex-lg-row justify-content-around statistic mx-3 mx-md-5 p-5 bg-white">
             <div className="d-flex align-items-center statistic-card mb-5 mb-lg-0 justify-content-center">
               <div className="statistic-icon">
                 <img src={marketing} alt="Oystr"/>
@@ -72,7 +72,7 @@ function App() {
       </section>
      <section id="aboutRobots" className="my-5" >
         <h2 className="fw-700" style={{color: '#E5E5E5'}}>Quais problemas<br /> nossos robôs resolvem</h2>
-        <div className="d-flex row m-5 justify-content-center">
+        <div className="d-flex row mx-0 my-5 mx-md-5 justify-content-center">
           <div className="col-xs-12 col-lg-5 d-none d-lg-inline">
             <img src={bots} className="w-100"  alt="Bots"/>
           </div>
