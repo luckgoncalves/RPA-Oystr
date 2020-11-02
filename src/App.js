@@ -98,7 +98,7 @@ function App() {
                 <h3>Controlicos de demanda operacional</h3>
                 <p>Tenho o controle e aumente exponencialmente a escala e capacidade de entrega da sua operação, sem perder qualidade.</p>
               </div>
-              <button className="d-block d-lg-none button-agenda ml-3 mt-5">Agendar demonstração</button>
+              <button className="d-block d-lg-none button-agenda ml-md-3 mt-5">Agendar demonstração</button>
             </div>
             </div>
           </div>
@@ -151,15 +151,15 @@ function App() {
           <div className="list-questions" style={{zIndex:11, width: '25rem'}}>
             <ul className="list-perguntas text-left">
               <li className="d-flex justify-content-between active">Como funciona? 
-              <div style={{width: '26px', height: '26px', borderRadius: '50%', background: '#FF4A6B'}} className="tag-play align-items-center justify-content-center"><img src={play}  alt="Play"/></div></li>
+              <div style={{width: '26px', height: '26px', borderRadius: '50%', background: '#FF4A6B'}} className="tag-play  d-none d-lg-flex align-items-center justify-content-center"><img src={play} alt="Play"/></div></li>
               <li className="d-flex justify-content-between">Quais carteiras trabalhamos?
-                <div style={{width: '26px', height: '26px', borderRadius: '50%', background: '#FF4A6B'}} className="tag-play align-items-center justify-content-center"><img src={play}  alt="Play"/></div>
+                <div style={{width: '26px', height: '26px', borderRadius: '50%', background: '#FF4A6B'}} className="tag-play  d-none d-lg-flex align-items-center justify-content-center"><img src={play} alt="Play"/></div>
               </li>
               <li className="d-flex justify-content-between">Quais carteiras trabalhamos?
-                <div style={{width: '26px', height: '26px', borderRadius: '50%', background: '#FF4A6B'}} className="tag-play align-items-center justify-content-center"><img src={play}  alt="Play"/></div>
+                <div style={{width: '26px', height: '26px', borderRadius: '50%', background: '#FF4A6B'}} className="tag-play  d-none d-lg-flex align-items-center justify-content-center"><img src={play} alt="Play"/></div>
               </li>
               <li className="d-flex justify-content-between">Como são as integrações?
-                <div style={{width: '26px', height: '26px', borderRadius: '50%', background: '#FF4A6B'}} className="tag-play align-items-center justify-content-center"><img src={play}  alt="Play"/></div>
+                <div style={{width: '26px', height: '26px', borderRadius: '50%', background: '#FF4A6B'}} className="tag-play  d-none d-lg-flex align-items-center justify-content-center"><img src={play} alt="Play"/></div>
               </li>
             </ul>
           </div>
@@ -174,10 +174,10 @@ function App() {
       </section>
       <section id="contact" className="d-flex flex-column flex-lg-row justify-content-between align-items-center justify-content-center">
         <div className="order-1 order-lg-0 p-5 w-100 w-lg-50 text-left d-flex justify-content-center align-items-center">
-          <div className="">
-            <h2>Vamos fazer seu negócio<br/> crescer, juntos</h2>
+          <div className="data-contact">
+            <h2 className="mb-5 mb-lg-0">Vamos fazer seu negócio<br/> crescer, juntos</h2>
             <p>Ligue para nós em <b>+55(41) 9 9235-0918</b></p>
-            <button className="button-contato">Fale conosco</button>
+            <button className="button-contato mt-5 mt-lg-0">Fale conosco</button>
           </div>
         </div>
         <div className="order-0 order-lg-1">

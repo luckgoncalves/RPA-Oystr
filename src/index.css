@@ -316,15 +316,27 @@ ul, li {
 
 
 
-@media (width <= 400px) {
+@media (width <= 500px) {
   button {
     max-width: 100%;
   }
   .list-questions {
     width: 100% !important;
   }
-  .conteiner-card{ 
+  .conteiner-card { 
     width: 100% !important;
+  }
+
+  .data-contact p {
+    font-weight: 400;
+    font-size: 28px;
+    color: #E5E5E5;
+  }
+  
+  .data-contact p b {
+    font-weight: 900;
+    font-size: 28px;
+    color: #FFF;
   }
 }
 
