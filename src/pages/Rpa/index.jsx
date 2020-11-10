@@ -14,6 +14,9 @@ import time from '../../assets/img/time.svg'
 import ellipse from '../../assets/img/ellipse.svg'
 import play from '../../assets/img/play.svg'
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import { Contact, Testmonials, Bots, CardQuestions } from './styles'
 
 function Rpa() {
@@ -149,7 +152,10 @@ function Rpa() {
       </section>
       <Testmonials className="d-flex flex-column flex-lg-row row w-100">
         <div className="p-0 img-depoimento col-12 col-lg-5">
-          <img src={kelri} alt="Kelri" />
+          <LazyLoadImage
+              alt={'Kelri'}
+              effect="blur"
+              src={kelri} />
         </div>
         <div className="d-flex align-items-center justify-content-center flex-column text-depoimento p-5 col-12 col-lg-7">
           <div className="text-left d-flex align-items-center justify-content-center desc-depoimento mb-5">
@@ -212,7 +218,10 @@ function Rpa() {
           </div>
         </div>
         <figure className="order-0 order-lg-1 mb-0">
-          <img src={fotoEquipe} alt="Equipe Oystr."/>
+          <LazyLoadImage
+            alt={'Equipe Oystr'}
+            effect="blur"
+            src={fotoEquipe} />
         </figure>
       </Contact>
       </main>

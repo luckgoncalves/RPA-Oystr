@@ -33,8 +33,11 @@ export const Contact = styled.section`
 
    figure {
      width: 100%;
-     img {
-      width: 100%
+     span{
+      width: 100%;
+      img {
+       width: 100%
+      }
      }
    }
  }
@@ -64,8 +67,11 @@ export const Testmonials = styled.section`
 
   @media (min-width: 120px) {
     .img-depoimento {
-      img { 
+      span {
         width: 100%;
+        img { 
+          width: 100%;
+        }
       }
     }
   }
