@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   
   background: ${props => props.pathname === '/' ? '#06777A' : '#065170'} ;
-  .collapse {
+  .navbar-collapse,.collapse {
     z-index: 9999;
     padding: 3rem;
     background: ${props => props.pathname === '/' ? '#06777A' : '#065170'} ;

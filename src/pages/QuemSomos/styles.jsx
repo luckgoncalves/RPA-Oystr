@@ -48,7 +48,11 @@ export const CardTeam = styled.div`
 
   figure {
     width: 222.27px;
+    min-height: 222.27px;
+    border-radius:50%;
+
     margin: 0 3rem 0 0;
+    background-color: #146181;
   }
 
   h3 {
@@ -94,9 +98,9 @@ export const CardTeamMobile = styled.div`
 
   padding: 0 1.5rem 1.5rem 1.5rem;
   margin: 10rem 10px 13rem 10px;
+
   &:last-child {
     margin: 10rem 10px 0 10px;
-
   }
 
   background: #146181;
@@ -104,7 +108,11 @@ export const CardTeamMobile = styled.div`
 
   figure {
     width: 222.27px;
+    min-height: 222.27px;
     margin: -23% 0 0 0;
+
+    border-radius:50%;
+    background-color: #146181;
   }
 
   h3 {
