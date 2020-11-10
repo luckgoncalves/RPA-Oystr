@@ -80,13 +80,17 @@ export const CardTeam = styled.div`
   .description {
     margin-top: 1.5rem;
     text-align: left;
-
     font-style: normal;
+
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
 
     color: #E5E5E5;
+
+    @media (min-width: 990px) and (max-width: 1200px) {
+      font-size: 14px
+    }
   }
 `;
 
@@ -97,7 +101,7 @@ export const CardTeamMobile = styled.div`
   min-height: 231px;
 
   padding: 0 1.5rem 1.5rem 1.5rem;
-  margin: 10rem 10px 13rem 10px;
+  margin: 10rem 10px 8rem 10px;
 
   &:last-child {
     margin: 10rem 10px 0 10px;
@@ -110,9 +114,14 @@ export const CardTeamMobile = styled.div`
     width: 222.27px;
     min-height: 222.27px;
     margin: -23% 0 0 0;
-
+    
     border-radius:50%;
     background-color: #146181;
+    
+    @media (min-width: 640px) {
+      margin: -10% 0 0 0;
+
+    }
   }
 
   h3 {
