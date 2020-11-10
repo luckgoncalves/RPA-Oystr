@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Container, CardTeam, CardTeamMobile } from './styles';
 
 function QuemSomos() {
@@ -41,7 +42,10 @@ function QuemSomos() {
       <>
         <CardTeam className="d-none d-lg-flex">
           <figure>
-            <img src={t.image} alt={t.name} />
+            <LazyLoadImage
+              alt={t.name}
+              effect="blur"
+              src={t.image} />
           </figure>
           <div className="d-flex flex-column">
             <div className="d-flex align-items-center">
@@ -57,7 +61,10 @@ function QuemSomos() {
         </CardTeam>
         <CardTeamMobile className="d-flex flex-column d-lg-none">
           <figure>
-            <img src={t.image} alt={t.name} />
+            <LazyLoadImage
+              alt={t.name}
+              effect="blur"
+              src={t.image} />
           </figure>
           <div className="d-flex flex-column mt-5">
             <div className="d-flex align-items-center">
