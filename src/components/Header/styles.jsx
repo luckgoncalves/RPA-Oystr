@@ -3,6 +3,11 @@ import styled from 'styled-components';
 export const Container = styled.div`
   
   background: ${props => props.pathname === '/' ? '#06777A' : '#065170'} ;
+  .collapse {
+    z-index: 9999;
+    padding: 3rem;
+    background: ${props => props.pathname === '/' ? '#06777A' : '#065170'} ;
+  }
   height: 130px;
   margin-bottom: ${props => props.pathname === '/' ? '130px' : ''} ;
 
