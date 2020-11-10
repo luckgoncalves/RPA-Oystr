@@ -101,7 +101,7 @@ export const CardTeamMobile = styled.div`
   min-height: 231px;
 
   padding: 0 1.5rem 1.5rem 1.5rem;
-  margin: 10rem 10px 8rem 10px;
+  margin: 8rem 10px 8rem 10px;
 
   &:last-child {
     margin: 10rem 10px 0 10px;
