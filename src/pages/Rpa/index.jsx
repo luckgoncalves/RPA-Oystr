@@ -14,7 +14,7 @@ import time from '../../assets/img/time.svg'
 import ellipse from '../../assets/img/ellipse.svg'
 import play from '../../assets/img/play.svg'
 
-import { Contact, Testmonials, Bots } from './styles'
+import { Contact, Testmonials, Bots, CardQuestions } from './styles'
 
 function Rpa() {
   const cards = [
@@ -24,11 +24,28 @@ function Rpa() {
     {icon: monitoring, title: 'Controle seus robôs', text: 'Gerencie seus robôs em nossa plataforma.'},
   ]
 
-  const [questions, setQuestions] = useState([
-    {"id": 0, "title": "Como funciona?", "active": "active", "text": "Solicite a lista de robôs que temos para suas carteiras. São mais de 400 robôs! Se não encontrar o que precisa, nossa equipe técnica levanta as suas necessidades e desenha o projeto sem custo!"},
-    {"id": 1, "title": "Quanto tempo para criar um robô?", "active": "", "text": "Solicite a lista de robôs que temos para suas carteiras. São mais de 400 robôs! Se não encontrar o que precisa, nossa equipe técnica levanta as suas necessidades e desenha o projeto sem custo!"},
-    {"id": 2, "title": "Quais carteiras trabalhamos?", "active": "", "text": "Solicite a lista de robôs que temos para suas carteiras. São mais de 400 robôs! Se não encontrar o que precisa, nossa equipe técnica levanta as suas necessidades e desenha o projeto sem custo!"},
-    {"id": 3, "title": "Como são as integrações?", "active": "", "text": "Solicite a lista de robôs que temos para suas carteiras. São mais de 400 robôs! Se não encontrar o que precisa, nossa equipe técnica levanta as suas necessidades e desenha o projeto sem custo!"},
+  const [ questions, setQuestions ] = useState([
+    {
+      id: 0, 
+      title: "Como funciona?", 
+      active: "active", 
+      text: "Solicite a lista de robôs que temos para suas carteiras. São mais de 400 robôs! Se não encontrar o que precisa, nossa equipe técnica levanta as suas necessidades e desenha o projeto sem custo!"
+    },{
+      id: 1, 
+      title: "Quanto tempo para criar um robô?", 
+      active: "", 
+      text: "Após entrer em contato com sua equipe, vamos iniciar um projeto com o mapeamento de suas necessidades e logo em seguida passamos um prazo que pode ser de 2 semanas, 4 semanas ou 6 semanas."
+    },{
+      id: 2, 
+      title: "Quais carteiras trabalhamos?",
+      active: "", 
+      text: "Solicite a lista de robôs que temos para suas carteiras. São mais de 400 robôs! Se não encontrar o que precisa, nossa equipe técnica levanta as suas necessidades e desenha o projeto sem custo!"
+    },{
+      id: 3, 
+      title: "Como são as integrações?", 
+      active: "", 
+      text: "Você precisa enviar um e-mail para nossa equipe, suporte@oystr.com.br. E vamos entrar em contato para liberar a API."
+    }
   ])
   return (
     <>
@@ -158,9 +175,20 @@ function Rpa() {
           <div className="list-questions" style={{zIndex:11, width: '25rem'}}>
             <ul className="list-perguntas text-left">
               {questions.map( qt => 
+              <>
                 <li key={qt.id} onClick={() => setQuestions(questions.map( q => q.id === qt.id ? {...q, active: "active"} : {...q, active: ""}))} className={`d-flex justify-content-between ${qt.active}`}>{qt.title} 
                   <div style={{width: '26px', height: '26px', borderRadius: '50%', background: '#FF4A6B'}} className="tag-play  d-none d-lg-flex align-items-center justify-content-center"><img src={play} alt="Play"/></div>
                 </li>
+                {qt.active === 'active' && (
+                  <CardQuestions className="d-flex d-lg-none card" style={{zIndex:10}}>
+                    <div className="card-body ">
+                      <div className="card-text text-left" style={{color: '#000'}}>
+                        {qt.text}
+                      </div>
+                    </div>
+                  </CardQuestions>
+                )}
+                </>
               )}
             </ul>
           </div>

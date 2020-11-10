@@ -20,8 +20,10 @@ function Header() {
     <Container pathname={pathname}>
        <Navbar className="mr-md-5" dark expand="lg">
         <NavbarBrand href="/"><img src={logoOystr} alt="Oystr." /></NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
+        <NavbarToggler style={{border: 'none'}} onClick={toggle}>
+          <img src={require('../../assets/img/hamburger.svg').default} alt="Menu"/>
+        </NavbarToggler>
+        <Collapse style={{background: '#065170'}} isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem className="mx-xl-4 mx-lg-3">
               <NavLink className="active" href="/team">Quem somos</NavLink>

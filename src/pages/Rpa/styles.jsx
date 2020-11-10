@@ -73,10 +73,34 @@ export const Testmonials = styled.section`
 
 export const Bots = styled.section`
 
-
  & > div:first-child {
    @media (max-width: 991px) {
      width:70vw;
    }
  }
+`;
+
+export const CardQuestions = styled.div`
+  margin-left: 0;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #252525;
+
+
+  .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .card-text { 
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 26px;
+    
+      color: #535353;
+    }
+  }
 `;

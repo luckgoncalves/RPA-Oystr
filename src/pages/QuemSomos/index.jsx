@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, CardTeam } from './styles';
+import { Container, CardTeam, CardTeamMobile } from './styles';
 
 function QuemSomos() {
   const team = [
@@ -32,11 +32,14 @@ function QuemSomos() {
 
   return (
     <Container>
-      <h1>Sócios</h1>
-      <h4>Confiança é a base de qualquer negócio e por isso somos o que somos!</h4>
+      <div>
+        <h1>Sócios</h1>
+        <h4>Confiança é a base de qualquer negócio e por isso somos o que somos!</h4>
+      </div>
 
       {team.map( t => 
-        <CardTeam>
+      <>
+        <CardTeam className="d-none d-lg-flex">
           <figure>
             <img src={t.image} alt={t.name} />
           </figure>
@@ -52,6 +55,23 @@ function QuemSomos() {
             </div>
           </div>
         </CardTeam>
+        <CardTeamMobile className="d-flex flex-column d-lg-none">
+          <figure>
+            <img src={t.image} alt={t.name} />
+          </figure>
+          <div className="d-flex flex-column mt-5">
+            <div className="d-flex align-items-center">
+              <h3>{t.name}</h3>
+              <span>{t.function}</span>
+            </div>
+            <div className="description">
+              <p>
+                {t.text}
+              </p>
+            </div>
+          </div>
+        </CardTeamMobile>
+        </>
       )}
     </Container>
   );
