@@ -316,7 +316,7 @@ ul, li {
 
 
 
-@media (width <= 500px) {
+@media (max-width: 500px) {
   button {
     max-width: 100%;
   }
@@ -340,7 +340,7 @@ ul, li {
   }
 }
 
-@media (width <= 990px) {
+@media (max-width: 1020px) {
   #whatWheDo div{
     max-width: 100%;
   }
@@ -355,8 +355,7 @@ ul, li {
 
 }
 
-@media (width >= 1100px) {
-  
+@media (min-width: 1021px) {
   
   .list-perguntas .active {
     margin-right: -55px;

@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: #06777A;
+  
+  background: ${props => props.pathname === '/' ? '#06777A' : '#065170'} ;
+  height: 130px;
+  margin-bottom: ${props => props.pathname === '/' ? '130px' : ''} ;
 
   .nav-item {
     .nav-link {
