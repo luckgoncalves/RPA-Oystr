@@ -1,6 +1,5 @@
+import React from 'react'
 import { useState } from 'react'
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
 import bots from '../../assets/img/Frame.svg'
 import kelri from '../../assets/img/kelri.svg'
 import fotoEquipe from '../../assets/img/foto-equipe.svg'
@@ -14,6 +13,8 @@ import robot from '../../assets/img/robot.svg'
 import time from '../../assets/img/time.svg'
 import ellipse from '../../assets/img/ellipse.svg'
 import play from '../../assets/img/play.svg'
+
+import { Contact, Testmonials, Bots } from './styles'
 
 function Rpa() {
   const cards = [
@@ -31,13 +32,12 @@ function Rpa() {
   ])
   return (
     <>
-      {/* <Header /> */}
       <main>
-       <section id="whatWheDo" className="d-flex flex-column w-100">
-        <div className="d-flex justify-content-center justify-content-lg-between row mx-0">
+       <Bots id="whatWheDo" className="d-flex flex-column w-100">
+        <div className="d-flex justify-content-center justify-content-lg-between row mx-xs-3 mx-md-3 mx-3 mx-lg-0">
           <div className="p-0 p-lg-5 py-5 py-lg-0 text-left col-12 col-lg-6">
             <h2 className="fw-bold mb-3">Robôs inteligentes para multiplicar a produtividade da sua empresa</h2>
-            <p className="fw-400 mb-3" style={{color: '#E5E5E5'}}>Integre seus sistemas, acabe com o <br/>retrabalho e escale seu negócio!</p>
+            <p className="fw-400 mb-3" style={{color: '#E5E5E5'}}>Integre seus sistemas, escale seu negócio e acabe com o retrabalho.<br />Nossos robôs no operacional, sua equipe nas análises e decisões.</p>
             <button className="button-agenda fw-700">Agendar demonstração</button>
           </div>
           <div className="d-none d-lg-inline col-5 pr-0" style={{position: 'relative'}}>
@@ -47,7 +47,7 @@ function Rpa() {
             </div>
           </div>
         </div>
-          <div className="d-flex flex-column flex-lg-row justify-content-around statistic mx-3 mx-md-5 p-5 bg-white">
+          <div className="d-flex flex-column flex-lg-row justify-content-around statistic mx-3 mx-md-3 p-5 bg-white">
             <div className="d-flex align-items-center statistic-card mb-5 mb-lg-0 justify-content-center">
               <div className="statistic-icon">
                 <img src={marketing} alt="Oystr"/>
@@ -76,7 +76,7 @@ function Rpa() {
               </div>
             </div>
           </div>
-      </section>
+      </Bots>
      <section id="aboutRobots" className="my-5" >
         <h2 className="fw-700" style={{color: '#E5E5E5'}}>Quais problemas<br /> nossos robôs resolvem</h2>
         <div className="d-flex row mx-0 my-5 mx-md-5 justify-content-center">
@@ -115,7 +115,7 @@ function Rpa() {
         <div className="w-100">
           <h2 className="fw-700" style={{color: '#E5E5E5'}}>Soluções sob medida<br /> para suas necessidades de negócios</h2>
         </div>
-        <div className="conteiner-card d-flex my-5 px-3 mx-3">
+        <div className="conteiner-card d-flex my-5 px-3 ml-3">
           {cards.map( card => 
             <div className="card mx-3">
               <div className="card-body px-5">
@@ -130,16 +130,16 @@ function Rpa() {
           )}
         </div>
       </section>
-      <section className="d-flex flex-column flex-lg-row row w-100">
+      <Testmonials className="d-flex flex-column flex-lg-row row w-100">
         <div className="p-0 img-depoimento col-12 col-lg-5">
           <img src={kelri} alt="Kelri" />
         </div>
         <div className="d-flex align-items-center justify-content-center flex-column text-depoimento p-5 col-12 col-lg-7">
-          <div className="d-flex align-items-center justify-content-center desc-depoimento mb-5">
+          <div className="text-left d-flex align-items-center justify-content-center desc-depoimento mb-5">
             <p>"A aplicação dessas ferramentas na rotina operacional gerou também uma economia para o escritório, permitindo a ampliação de atuação no pais com a entrada de novos clientes sem a necessidade da ampliação de capacite humano.
-            Vamos em frente na parceria com a Oystr na busca de novas ferramentas e mais evolução sempre."</p>
+            <br /><br />Vamos em frente na parceria com a Oystr na busca de novas ferramentas e mais evolução sempre."</p>
           </div>
-          <div style={{width: '70%'}} className="d-flex flex-column flex-lg-row align-items-center justify-content-between">
+          <div className="footer-depoimento d-flex flex-column flex-lg-row align-items-center justify-content-between">
             <div className="d-flex justify-content-between">
               <div className="autor-depoimento mx-3"><span>Kelri Molina</span> </div>
               <div className="mx-5" style={{height: '31px', border: '1px solid #396AB7'}}></div>
@@ -148,7 +148,7 @@ function Rpa() {
             <button className="button-depoimento mx-3 mt-3 mt-lg-0"> Mais depoimentos </button>
           </div>
         </div>
-      </section>
+      </Testmonials>
       <section className="d-flex flex-column justify-content-center align-items-center p-5" style={{background: '#0D8D91'}}>
         <div>
           <h2>Perguntas Frequentes</h2>
@@ -175,18 +175,18 @@ function Rpa() {
           </div>
         </div>
       </section>
-      <section id="contact" className="d-flex flex-column flex-lg-row justify-content-between align-items-center justify-content-center">
+      <Contact id="contact" className="d-flex flex-column flex-lg-row justify-content-between align-items-center justify-content-center">
         <div className="order-1 order-lg-0 p-5 w-100 w-lg-50 text-left d-flex justify-content-center align-items-center">
-          <div className="data-contact">
+          <div className="data-contact mx-auto">
             <h2 className="mb-5 mb-lg-0">Vamos fazer seu negócio<br/> crescer, juntos</h2>
-            <p>Ligue para nós em <b>+55(41) 9 9235-0918</b></p>
+            <p>Clique abaixo e vamos conversar!</p>
             <button className="button-contato mt-5 mt-lg-0">Fale conosco pelo WhatsApp</button>
           </div>
         </div>
-        <div className="order-0 order-lg-1">
-          <img src={fotoEquipe} className="w-100" alt="Equipe Oystr."/>
-        </div>
-      </section>
+        <figure className="order-0 order-lg-1 mb-0">
+          <img src={fotoEquipe} alt="Equipe Oystr."/>
+        </figure>
+      </Contact>
       </main>
     </>
   );
