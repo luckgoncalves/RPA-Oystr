@@ -123,7 +123,7 @@ function Rpa() {
               </div>
               <div className="card-problemas">
                 <h3>Controle de demanda operacional</h3>
-                <p>Tenho o controle e aumente exponencialmente a escala e capacidade de entrega da sua operação, sem perder qualidade.</p>
+                <p>Tenha o controle e aumente exponencialmente a escala e capacidade de entrega da sua operação, sem perder qualidade.</p>
               </div>
               <a target="_blank" without="true" rel="noreferrer" href="https://api.whatsapp.com/send?phone=554191487519&text=Ol%C3%A1%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20demonstra%C3%A7%C3%A3o" className="d-flex d-lg-none button-agenda ml-md-3 mt-5">Agendar demonstração</a>
             </div>
