@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Container, CardTeam, CardTeamMobile } from './styles';
@@ -31,16 +31,21 @@ function QuemSomos() {
     },
   ]
 
+  useEffect(() => {
+    const elem = document.querySelector('#Team')
+    elem.scrollIntoView({behavior: 'smooth', block: 'start' })
+  },[])
+
   return (
-    <Container>
+    <Container id="Team">
       <div>
         <h1>Sócios</h1>
         <h4>Confiança é a base de qualquer negócio e por isso somos o que somos!</h4>
       </div>
 
       {team.map( t => 
-      <>
-        <CardTeam className="d-none d-lg-flex">
+      <div key={t.name}>
+        <CardTeam  className="d-none d-lg-flex">
           <figure>
             <LazyLoadImage
               alt={t.name}
@@ -78,7 +83,7 @@ function QuemSomos() {
             </div>
           </div>
         </CardTeamMobile>
-        </>
+        </div>
       )}
     </Container>
   );

@@ -137,7 +137,7 @@ function Rpa() {
         </div>
         <div className="conteiner-card d-flex my-5 px-3 ml-3">
           {cards.map( card => 
-            <div className="card mx-3">
+            <div key={card.title} className="card mx-3">
               <div className="card-body px-5">
                 <div>
                   <div className="elipse-img-card"></div>
@@ -181,7 +181,7 @@ function Rpa() {
           <div className="list-questions" style={{zIndex:11, width: '25rem'}}>
             <ul className="list-perguntas text-left">
               {questions.map( qt => 
-              <>
+              <div key={qt.id}>
                 <li key={qt.id} onClick={() => setQuestions(questions.map( q => q.id === qt.id ? {...q, active: "active"} : {...q, active: ""}))} className={`d-flex justify-content-between ${qt.active}`}>{qt.title} 
                   <div style={{width: '26px', height: '26px', borderRadius: '50%', background: '#FF4A6B'}} className="tag-play  d-none d-lg-flex align-items-center justify-content-center"><img src={play} alt="Play"/></div>
                 </li>
@@ -194,14 +194,14 @@ function Rpa() {
                     </div>
                   </CardQuestions>
                 )}
-                </>
+                </div>
               )}
             </ul>
           </div>
           <div className="d-none d-lg-flex card card-perguntas mx-3" style={{zIndex:10}}>
             <div className="card-body ">
               {questions.map( qf => qf.active === 'active' &&
-                <div className="card-text text-left" style={{color: '#000'}}>
+                <div key={qf.id} className="card-text text-left" style={{color: '#000'}}>
                   {qf.text}
                 </div>
               )}

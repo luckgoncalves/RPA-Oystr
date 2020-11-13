@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   background: #0D8D90;
-  color: #fff;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -29,16 +28,33 @@ export const Container = styled.div`
         font-size: 16px;
         line-height: 19px;
 
+        cursor: pointer;
         color: #E5E5E5;
         padding: 0.3rem 0;
+        
+        &:hover {
+          text-decoration: underline;
+          color: #E5E5E5;
+        }
       }
     }
 
+    
+
     .redes-sociais {
-      margin: 0;
+      margin: 1rem 0;
       img {
         margin: 0 1rem 0 0;
       }
+    }
+
+
+    p {
+      color: #E5E5E5;
+      font-size: 16px;
+      line-height: 19px;
+
+      margin-bottom: 0.5rem;
     }
   }
 `;
