@@ -81,7 +81,7 @@ ul, li {
   height: 68px;
 
   border: none;
-  background: #FF4A6B;
+  background: #FF4A6B !important;
   border-radius: 59px;
 
   font-size: 16px;
@@ -90,11 +90,13 @@ ul, li {
   text-align: center;
   color: #FFFFFF;
   
-  transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out !important;
 }
 
 .button-contato:hover {
   transform: scale(1.05);
+  color: #fff;
+  text-decoration: none;
 }
 
 .card-problemas {
@@ -120,20 +122,24 @@ ul, li {
 }
 
 .button-agenda {
-  border: none;
+  border: none !important;
   width: 348px;
   height: 68px;
 
   background: #FF4A6B;
-  border-radius: 59px;
-  color: #FFFFFF;
+  background-color: #FF4A6B !important;
+  border-radius: 59px !important;
+  color: #FFFFFF !important;
 
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  line-height: 19px !important;
+  text-align: center !important;
 
-  transition: all .2s ease-in-out;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s ease-in-out !important;
 }
 
 .button-agenda:hover {
@@ -141,7 +147,7 @@ ul, li {
 }
 
 .conteiner-card {
-  width: 85%;
+  width: 90%;
 
   overflow-x: auto;
   justify-content: start;

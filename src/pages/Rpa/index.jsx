@@ -58,7 +58,7 @@ function Rpa() {
           <div className="p-0 p-lg-5 py-5 py-lg-0 text-left col-12 col-lg-6">
             <h2 className="fw-bold mb-3">Robôs inteligentes para multiplicar a produtividade da sua empresa</h2>
             <p className="fw-400 mb-3" style={{color: '#E5E5E5'}}>Integre seus sistemas, escale seu negócio e acabe com o retrabalho.<br />Nossos robôs no operacional, sua equipe nas análises e decisões.</p>
-            <button className="button-agenda fw-700">Agendar demonstração</button>
+            <a target="_blank" without="true" rel="noreferrer" href="https://api.whatsapp.com/send?phone=554191487519&text=Ol%C3%A1%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20demonstra%C3%A7%C3%A3o" className="button-agenda btn fw-700">Agendar demonstração</a>
           </div>
           <div className="d-none d-lg-inline col-5 pr-0" style={{position: 'relative'}}>
             <div>
@@ -114,7 +114,7 @@ function Rpa() {
                 <h3>Acabe com os processos repetitivosque não agregam.</h3>
                 <p>Se você tem um processo que tenha volume e leve pelo menos 8 horas de execução por semana ele deve e pode ser automatizado.</p>
               </div>
-              <button className="d-none d-lg-block button-agenda mt-5">Agendar demonstração</button>
+              <a target="_blank" without="true" rel="noreferrer" href="https://api.whatsapp.com/send?phone=554191487519&text=Ol%C3%A1%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20demonstra%C3%A7%C3%A3o" className="d-none d-lg-flex btn button-agenda mt-5">Agendar demonstração</a>
             </div>
             <div className="col-xs-12 col-lg-6">
               <div className="card-problemas">
@@ -122,10 +122,10 @@ function Rpa() {
                 <p>Além de executar mais rápido, os robôs conseguem conferir entregas, seguindo padrões de qualidade e compliance.</p>
               </div>
               <div className="card-problemas">
-                <h3>Controlicos de demanda operacional</h3>
+                <h3>Controle de demanda operacional</h3>
                 <p>Tenho o controle e aumente exponencialmente a escala e capacidade de entrega da sua operação, sem perder qualidade.</p>
               </div>
-              <button className="d-block d-lg-none button-agenda ml-md-3 mt-5">Agendar demonstração</button>
+              <a target="_blank" without="true" rel="noreferrer" href="https://api.whatsapp.com/send?phone=554191487519&text=Ol%C3%A1%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20demonstra%C3%A7%C3%A3o" className="d-flex d-lg-none button-agenda ml-md-3 mt-5">Agendar demonstração</a>
             </div>
             </div>
           </div>
@@ -214,7 +214,7 @@ function Rpa() {
           <div className="data-contact mx-auto">
             <h2 className="mb-5 mb-lg-0">Vamos fazer seu negócio<br/> crescer, juntos</h2>
             <p>Clique abaixo e vamos conversar!</p>
-            <button className="button-contato mt-5 mt-lg-0">Fale conosco pelo WhatsApp</button>
+            <a target="_blank" without="true" rel="noreferrer" href="https://bit.ly/3np0qPM" className="button-agenda  btn mt-5 mt-lg-0">Fale conosco pelo WhatsApp</a>
           </div>
         </div>
         <figure className="order-0 order-lg-1 mb-0">

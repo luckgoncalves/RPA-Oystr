@@ -21,9 +21,18 @@ export const Contact = styled.section`
   color: #E5E5E5;
  }
 
- button { 
+ a { 
   width: 306px;
   height: 68px;
+  padding: 1rem;
+
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+    /* color: #fff;
+    text-decoration: none; */
+  }
  }
 
  @media (max-width: 1040px) {
