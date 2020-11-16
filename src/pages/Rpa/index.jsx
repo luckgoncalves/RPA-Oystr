@@ -137,7 +137,7 @@ function Rpa() {
         </div>
         <div className="conteiner-card d-flex justify-content-start justify-content-xl-center my-5 px-3 mx-auto">
           {cards.map( card => 
-            <div key={card.title} className="card mx-3">
+            <div key={card.title} className="card mx-2">
               <div className="card-body px-5">
                 <div>
                   <div className="elipse-img-card"></div>
