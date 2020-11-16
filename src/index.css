@@ -147,7 +147,7 @@ ul, li {
 }
 
 .conteiner-card {
-  width: 90%;
+  width: 100%;
 
   overflow-x: auto;
   justify-content: start;

@@ -135,7 +135,7 @@ function Rpa() {
         <div className="w-100">
           <h2 className="fw-700" style={{color: '#E5E5E5'}}>Soluções sob medida<br /> para suas necessidades de negócios</h2>
         </div>
-        <div className="conteiner-card d-flex my-5 px-3 ml-3">
+        <div className="conteiner-card d-flex justify-content-start justify-content-xl-center my-5 px-3 mx-auto">
           {cards.map( card => 
             <div key={card.title} className="card mx-3">
               <div className="card-body px-5">
