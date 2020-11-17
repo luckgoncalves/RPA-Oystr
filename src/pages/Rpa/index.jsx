@@ -21,9 +21,9 @@ import { Contact, Testmonials, Bots, CardQuestions } from './styles'
 
 function Rpa() {
   const cards = [
-    {icon: money, title: 'Baixo investimento', text: 'Modelo simples de cobrança, sem multas de contrato e de rápido retorno.'},
-    {icon: implementer, title: 'Sem trauma de implantação', text: 'Robôs rodando na sua empresa em até 6 semanas.'},
-    {icon: win, title: 'Melhore a experiência dos seus colaboradores', text: 'Analistas devem analisar. Coordenadores devem coordenar e gerentes devem gerenciar. Tarefas repetitivas ficam com nossos robôs.'},
+    {icon: money, title: 'Baixo investimento', text: 'Faturamento simples e objetivo, sem multas e carências.'},
+    {icon: implementer, title: 'Sem trauma de implantação', text: 'Liberação imediata após contratação, para robôs prontos!'},
+    {icon: win, title: 'Melhore a experiência dos seus colaboradores', text: 'Analistas devem analisar. Coordenadores devem coordenar e gerentes devem gerenciar. Tarefas repetitivas vamos robotizar!!'},
     {icon: monitoring, title: 'Controle seus robôs', text: 'Gerencie seus robôs em nossa plataforma.'},
   ]
 
@@ -32,22 +32,26 @@ function Rpa() {
       id: 0, 
       title: "Como funciona?", 
       active: "active", 
-      text: "Solicite a lista de robôs que temos para suas carteiras. São mais de 400 robôs! Se não encontrar o que precisa, nossa equipe técnica levanta as suas necessidades e desenha o projeto sem custo!"
+      text: "a) Analisamos o processo a ser automatizado\nb) Criamos o robô\nc) Disponibilizamos em nosso painel e API\nd) Rotina automatizada!",
+      link: ""
     },{
       id: 1, 
       title: "Quanto tempo para criar um robô?", 
       active: "", 
-      text: "Após entrer em contato com sua equipe, vamos iniciar um projeto com o mapeamento de suas necessidades e logo em seguida passamos um prazo que pode ser de 2 semanas, 4 semanas ou 6 semanas."
+      text: "Robôs prontos tem sua liberação imediata. \n Novos robôs são criando em de 2 a 4 semanas em média!",
+      link: ""
     },{
       id: 2, 
       title: "Quais carteiras trabalhamos?",
       active: "", 
-      text: "Solicite a lista de robôs que temos para suas carteiras. São mais de 400 robôs! Se não encontrar o que precisa, nossa equipe técnica levanta as suas necessidades e desenha o projeto sem custo!"
+      text: "Já integramos diversos portais como Itaú, Santander, Bradesco, Vivo, Tim, Petrobras, Embratel , ALL entre outros.",
+      link: ""
     },{
       id: 3, 
-      title: "Como são as integrações?", 
+      title: "Faça integrações com nossa API", 
       active: "", 
-      text: "Você precisa enviar um e-mail para nossa equipe, suporte@oystr.com.br. E vamos entrar em contato para liberar a API."
+      text: "Todos nossos robôs podem ser integrados por API RESTful, acesse nossa documentação",
+      link: "https://docs.google.com/forms/d/1T8oP2NTyC6UnRgrJxV3sUpShlUatJ7z9Supqn49tK6g/"
     }
   ])
   return (
@@ -111,14 +115,14 @@ function Rpa() {
                 <p>Nossos robôs navegam  como humanos, e o melhor, sem envolver uma equipe de TI, tornando possível integrar sistemas diferentes, planilhas e plataformas sem a necessidade de pessoas para controlar.</p>
               </div>
               <div className="card-problemas">
-                <h3>Acabe com os processos repetitivosque não agregam.</h3>
+                <h3>Acabe com os processos repetitivos que não agregam</h3>
                 <p>Se você tem um processo que tenha volume e leve pelo menos 8 horas de execução por semana ele deve e pode ser automatizado.</p>
               </div>
               <a target="_blank" without="true" rel="noreferrer" href="https://api.whatsapp.com/send?phone=554191487519&text=Ol%C3%A1%20estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20demonstra%C3%A7%C3%A3o" className="d-none d-lg-flex btn button-agenda mt-5">Agendar demonstração</a>
             </div>
             <div className="col-xs-12 col-lg-6">
               <div className="card-problemas">
-                <h3>Lentidão e erros em tarefas operacionais.</h3>
+                <h3>Lentidão e erros em tarefas operacionais</h3>
                 <p>Além de executar mais rápido, os robôs conseguem conferir entregas, seguindo padrões de qualidade e compliance.</p>
               </div>
               <div className="card-problemas">
@@ -174,7 +178,7 @@ function Rpa() {
       </Testmonials>
       <section className="d-flex flex-column justify-content-center align-items-center p-5" style={{background: '#0D8D91'}}>
         <div>
-          <h2>Perguntas Frequentes</h2>
+          <h2>Perguntas frequentes: </h2>
           <p>Confira as maiores dúvidas para entregar robôs nas operações.</p>
         </div>
         <div className="d-flex align-items-center my-5 justify-content-center w-100">
@@ -188,8 +192,8 @@ function Rpa() {
                 {qt.active === 'active' && (
                   <CardQuestions className="d-flex d-lg-none card" style={{zIndex:10}}>
                     <div className="card-body ">
-                      <div className="card-text text-left" style={{color: '#000'}}>
-                        {qt.text}
+                      <div className="card-text text-left" style={{color: '#000', whiteSpace:'pre-line', lineHeight: '2rem'}}>
+                      {qt.text} {' '} {qt.link && <a target="_blank" without="true" rel="noreferrer" href={qt.link}>aqui.</a>}
                       </div>
                     </div>
                   </CardQuestions>
@@ -201,8 +205,8 @@ function Rpa() {
           <div className="d-none d-lg-flex card card-perguntas mx-3" style={{zIndex:10}}>
             <div className="card-body ">
               {questions.map( qf => qf.active === 'active' &&
-                <div key={qf.id} className="card-text text-left" style={{color: '#000'}}>
-                  {qf.text}
+                <div key={qf.id} className="card-text text-left" style={{color: '#000', whiteSpace:'pre-line', lineHeight: '2rem' }}>
+                  {qf.text} {' '} {qf.link && <a target="_blank" without="true" rel="noreferrer" href={qf.link}>aqui.</a>}
                 </div>
               )}
             </div>
@@ -212,8 +216,8 @@ function Rpa() {
       <Contact id="contact" className="d-flex flex-column flex-lg-row justify-content-between align-items-center justify-content-center">
         <div className="order-1 order-lg-0 p-5 w-100 w-lg-50 text-left d-flex justify-content-center align-items-center">
           <div className="data-contact mx-auto">
-            <h2 className="mb-5 mb-lg-0">Vamos fazer seu negócio<br/> crescer, juntos</h2>
-            <p>Clique abaixo e vamos conversar!</p>
+            <h2 className="mb-5 mb-lg-0">Vamos crescer, juntos</h2>
+            <p>Me chama no link abaixo!</p>
             <a target="_blank" without="true" rel="noreferrer" href="https://bit.ly/3np0qPM" className="button-agenda  btn mt-5 mt-lg-0">Fale conosco pelo WhatsApp</a>
           </div>
         </div>

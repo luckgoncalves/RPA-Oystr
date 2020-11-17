@@ -116,6 +116,10 @@ export const CardQuestions = styled.div`
       line-height: 26px;
     
       color: #535353;
+
+      @media(max-width: 991px ){
+        font-size: 15px;
+      }
     }
   }
 `;

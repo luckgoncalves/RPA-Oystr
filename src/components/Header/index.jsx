@@ -59,7 +59,7 @@ function Header() {
               <NavLink onClick={() => goTo('/#aboutRobots')}>Sobre nosso robôs</NavLink>
             </NavItem>
             <NavItem className="mx-xl-4 mx-lg-3">
-              <NavLink onClick={() => goTo('/#benefits')}>Beneficios</NavLink>
+              <NavLink onClick={() => goTo('/#benefits')}>Benefícios</NavLink>
             </NavItem>
             <NavItem className="mx-xl-4 mx-lg-3">
               <NavLink onClick={() => goTo('/#contact')}>Contato</NavLink>

@@ -136,7 +136,7 @@ ul, li {
   line-height: 19px !important;
   text-align: center !important;
 
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
   transition: all .2s ease-in-out !important;
@@ -301,6 +301,12 @@ ul, li {
   color: #E5E5E5;
   transition: all .2s ease-in-out;
   padding-right: 0rem;
+
+}
+@media(max-width: 991px) {
+  .list-perguntas li {
+    padding: 1rem 1.5rem;
+  }
 }
 
 .list-perguntas li .tag-play {
